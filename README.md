@@ -82,6 +82,6 @@ Or choose one yourself from [these builds](https://treeherder.mozilla.org/jobs?r
 
 To prepare the browser for the experimental API extension, visit about:config and set the following preferences:
 
-1. Set **xpinstall.signatures.required** to false
-2. Set **extensions.experiments.enabled** to true
-3. Set **signon.secureCredentialProvision.enabled** to true, to enable the browser sided code changes in the LoginManagerParent and LoginManagerHelper
+1. **xpinstall.signatures.required** to false
+2. **extensions.experiments.enabled** to true
+3. **signon.secureCredentialProvision.enabled** to true, to enable the browser sided code changes of the prototype

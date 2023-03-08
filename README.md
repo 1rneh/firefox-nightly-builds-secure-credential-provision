@@ -1,6 +1,6 @@
 # Modified Firefox Nightly version (for Secure Credential Provision Extension)
 
-This modified Firefox Nightly was developed within the scope of a bachelor thesis and to test the [experimental _Secure Credential Provision_ extension](https://github.com/1rneh/secure-credential-provision-extension#readme). It only servers as proof of concept.
+This modified Firefox Nightly was developed within the scope of my bachelor thesis to test the [experimental _Secure Credential Provision_ extension](https://github.com/1rneh/secure-credential-provision-extension#readme). It only servers as proof of concept.
 
 ---
 

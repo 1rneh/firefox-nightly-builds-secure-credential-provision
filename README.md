@@ -4,7 +4,42 @@ This modified Firefox Nightly was developed within the scope of my bachelor thes
 
 ---
 
-The preference signon.secureCredentialProvision.enabled enabled the changes, when it's set to true.
+## Installation options
+
+### 1. Option: Include files in your local build
+
+1. If you have a local build of Firefox Nightly, just exchange the files from the directory _local-build_ with the ones from your local Nightly build.
+
+   **all.js**: modules/libpref/init/all.js\
+   **LoginHelper.jsm**: toolkit/components/passwordmgr/LoginHelper.jsm\
+   **LoginManagerParent.jsm**: toolkit/components/passwordmgr/LoginManagerParent.jsm\
+   **LoginManagerPrompter.jsm**: toolkit/components/passwordmgr/LoginManagerPrompter.jsm
+
+2. Rebuild and run the application
+
+### 2. Option: Download the installation file for you operating system
+
+The installation files for Windows, Linux and OS X are provided in the dedicated directories in the repository.
+
+Or choose one yourself from [these builds](https://treeherder.mozilla.org/jobs?repo=try&revision=b02a3a062262134945b3775b428f20a403a5c7c1) (see screenshot with instructions). To get the installer file, click the B for "Build" next to the os version (1), click Artifacts and Debugging Tools (2) and choose the installation file (3).
+
+- Windows: target.installer.exe
+- Linux:
+- OS X: target.dmg
+
+![Exemplary installation guide for windows](installation-guide.png)
+
+## Preference settings
+
+To prepare the browser for the experimental API extension, visit about:config and set the following preferences:
+
+1. **xpinstall.signatures.required** to false
+2. **extensions.experiments.enabled** to true
+3. **signon.secureCredentialProvision.enabled** to true, to enable the browser sided code changes of the prototype
+
+---
+
+The preference signon.secureCredentialProvision.enabled enables the changes, when it's set to true.
 
 What is changed when the preference is set to true?
 
@@ -50,38 +85,3 @@ The method implementation:
     return logins;
   },
 ```
-
----
-
-## Installation options
-
-### 1. Option: Include files in your local build
-
-1. If you have a local build of Firefox Nightly, just exchange the files from the directory _local-build_ with the ones from your local Nightly build.
-
-   **all.js**: modules/libpref/init/all.js\
-   **LoginHelper.jsm**: toolkit/components/passwordmgr/LoginHelper.jsm\
-   **LoginManagerParent.jsm**: toolkit/components/passwordmgr/LoginManagerParent.jsm\
-   **LoginManagerPrompter.jsm**: toolkit/components/passwordmgr/LoginManagerPrompter.jsm
-
-2. Rebuild and run the application
-
-### 2. Option: Download the installation file for you operating system
-
-The installation files for Windows, Linux and OS X are provided in the dedicated directories in the repository.
-
-Or choose one yourself from [these builds](https://treeherder.mozilla.org/jobs?repo=try&revision=b02a3a062262134945b3775b428f20a403a5c7c1) (see screenshot with instructions). To get the installer file, click the B for "Build" next to the os version (1), click Artifacts and Debugging Tools (2) and choose the installation file (3).
-
-- Windows: target.installer.exe
-- Linux:
-- OS X: target.dmg
-
-![Exemplary installation guide for windows](installation-guide.png)
-
-## Preference settings
-
-To prepare the browser for the experimental API extension, visit about:config and set the following preferences:
-
-1. **xpinstall.signatures.required** to false
-2. **extensions.experiments.enabled** to true
-3. **signon.secureCredentialProvision.enabled** to true, to enable the browser sided code changes of the prototype

@@ -26,12 +26,3 @@ Check out the [changeset](https://hg.mozilla.org/try/rev/bfae150b526c89c0e601fef
 The installation files for Windows, Linux and OS X are provided in the respective directories in this repository.\
 [The builds](https://treeherder.mozilla.org/jobs?repo=try&revision=da623a40750f753de944d301968a4babd9f93d72) were generated on Mozilla’s automation servers.
 
----
-
-## Preference settings
-
-To prepare the browser for the experimental API extension, visit about:config and set the following preferences:
-
-1. **xpinstall.signatures.required** to false
-2. **extensions.experiments.enabled** to true
-3. **signon.secureCredentialProvision.enabled** to true (enables the browser sided code changes of the Secure Credential Provision prototype)

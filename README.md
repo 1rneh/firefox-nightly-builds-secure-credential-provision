@@ -4,7 +4,7 @@ This modified Firefox Nightly version was developed within the scope of my bache
 
 ---
 
-Check out the [changeset](https://hg.mozilla.org/try/rev/bfae150b526c89c0e601feff6e2ab2bbb7ba7c74) to see what the modifications entail.
+Check out the [changeset](https://hg.mozilla.org/try/rev/25f5d34f0436efd359f071fda13fbf906c24425a) to see what the modifications entail.
 
 ---
 

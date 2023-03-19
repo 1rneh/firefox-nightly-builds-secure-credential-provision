@@ -24,5 +24,4 @@ Check out the [changeset](https://hg.mozilla.org/try/rev/bfae150b526c89c0e601fef
 ### 2. Option: Download the installation file for your operating system
 
 The installation files for Windows, Linux and OS X are provided in the respective directories in this repository.\
-[The builds](https://treeherder.mozilla.org/jobs?repo=try&revision=da623a40750f753de944d301968a4babd9f93d72) were generated on Mozilla’s automation servers.
-
+The builds were generated on [Mozilla’s automation servers](https://treeherder.mozilla.org/jobs?repo=try&revision=da623a40750f753de944d301968a4babd9f93d72).
